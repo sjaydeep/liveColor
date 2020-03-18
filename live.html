@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>
+            live color
+        </title>
+        <style>
+        h1{
+            color: black;
+            font-family:sans-serif;
+            font-size: 30px; 
+        }
+        </style>
+        <script>
+        function demo()
+        {
+            var x = document.getElementById("input").value;
+            var y = document.getElementById("result");
+            y.style.backgroundColor=x;
+        }
+        </script>
+    </head>
+    <body id="result">
+        <center>
+        <h1>
+            Live color Viewer
+        </h1>
+        <input id="input" oninput="demo()">
+        </center> 
+    </body>
+</html>
